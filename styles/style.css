@@ -1,0 +1,115 @@
+/* Reset basic styling */
+@font-face {
+  font-family: Rubik;
+  src: url("/fonts/RubikVinyl-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+  background: #00b3ff;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: Rubik;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  /* מסדר בשורה  את כל מה שתחת li*/
+  margin: 0 105px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 29px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+  padding: 30px;
+  background: #fff;
+  max-width: 1300px;
+  /* מותח לי את כל המאין*/
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center
+}
+
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+main ul li {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 2px solid #00b3ff;
+  border-radius: 20px;
+  /* עיצוב השורה ברשימת אנשי קשר*/
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 18px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  /* באמצע השורה */
+
+
+
+
+}
+
+main ul li:hover {
+  transform: scale(1.02);
+  /* מדגיש את השמות במאין*/
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+/* footer {
+  background: #00b3ff;
+  color: #fff;
+  text-align: center;
+  padding: 1px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+} */
