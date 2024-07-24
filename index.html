@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="he" dir="rtl">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ספר טלפונים</title>
   <link rel="stylesheet" href="styles/style.css">
+  <script src="js/JavaScript.js"> </script>
 </head>
 
 <body>
@@ -22,20 +23,47 @@
   <main>
     <section id="contacts">
       <h2>רשימת אנשי קשר</h2>
-      <ul>
-        <li>גיל חדד - gil@gmail.com</li>
-        <li>רועי מיזרחי - roei@gmail.com</li>
-        <li> מורי וסרמן-mori@gmail.com</li>
-        <li>נדב סייג - nadav@gmail.com</li>
-        <li>מידן חמו - miedan@gmail.com</li>
-        <li>מיכאל סידוריוק -misha@gmail.com</li>
-        <li>נעמי שומנסקי - somnski@gmail.com</li>
+
+      <div style="display: flex;margin: auto;width: 100%; justify-content: center;gap: 20px;">
+        <button class="btn-add" onclick="showPopup()">הוסף איש קשר</button>
+        <button class="btn-clear" onclick="clearContacts()">נקה את כל אנשי הקשר</button>
+      </div>
+
+      <div id="contact-popup" class="popup" style="margin: auto;width: 100%; justify-content: center;gap: 20px;">
+
+        <div class="popup-content">
+          <span class="close" onclick="hidePopup()">&times; </span>
+          <h2>הוסף/עדכן איש קשר</h2>
+          <form style="display: flex;margin: auto;width: 100%; justify-content: center;gap: 20px;" id="contact-form">
+            <label for="name">שם:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">אימייל:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">שמור</button>
+          </form>
+        </div>
+      </div>
+
+      <ul id="contact-list">
+        <li>גיל חדד - gil@gmail.com <button onclick="deleteContact(this)">מחיקה</button> <button
+            onclick="updateContact(this)">עדכון</button></li>
+        <li>רועי מיזרחי - roei@gmail.com <button onclick="deleteContact(this)">מחיקה</button> <button
+            onclick="updateContact(this)">עדכון</button></li>
+        <li> מורי וסרמן - mori@gmail.com <button onclick="deleteContact(this)">מחיקה</button> <button
+            onclick="updateContact(this)">עדכון</button></li>
+        <li>נדב סייג - nadav@gmail.com <button onclick="deleteContact(this)">מחיקה</button> <button
+            onclick="updateContact(this)">עדכון</button></li>
+        <li>מידן חמו - miedan@gmail.com <button onclick="deleteContact(this)">מחיקה</button> <button
+            onclick="updateContact(this)">עדכון</button></li>
+        <li>מיכאל סידוריוק - misha@gmail.com <button onclick="deleteContact(this)">מחיקה</button> <button
+            onclick="updateContact(this)">עדכון</button></li>
+        <li>נעמי שומנסקי - somnski@gmail.com <button onclick="deleteContact(this)">מחיקה</button> <button
+            onclick="updateContact(this)">עדכון</button></li>
       </ul>
     </section>
+
   </main>
-  <footer>
-    <p></p>
-  </footer>
+  <footer>גיל חדד && רועי מיזרחי 49.1</footer>
 </body>
 
 </html>
