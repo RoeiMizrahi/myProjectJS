@@ -3,7 +3,6 @@
   font-family: Rubik;
   src: url("fonts/RubikVinyl-Regular.ttf");
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -102,14 +101,88 @@ main ul li:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+
+
 /* Footer styling */
-/* footer {
+footer {
   background: #00b3ff;
   color: #fff;
   text-align: center;
-  padding: 1px 0;
+  padding: 7px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
-} */
+}
+
+.btn-add {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #00b3ff;
+  color: white;
+  margin-bottom: 20px;
+
+
+}
+
+.btn-clear {
+  padding: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #00b3ff;
+  color: white;
+  margin-bottom: 20px;
+
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #00b3ff;
+  width: 80%;
+}
+
+.close {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#contact-form button {
+  padding: 6px;
+  font-size: 16px;
+  color: white;
+  background-color: #00b3ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
