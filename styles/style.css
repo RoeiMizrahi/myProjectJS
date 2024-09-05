@@ -186,8 +186,3 @@ footer {
   border-radius: 5px;
   cursor: pointer;
 }
-/* עיצוב ברירת מחדל של פריטי הקשר */
-.contact-item {
-  transition: background-color 0.3s ease;
-  /* מעבר חלק בצבע הרקע */
-}
